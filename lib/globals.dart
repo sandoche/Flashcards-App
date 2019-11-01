@@ -11,8 +11,8 @@ final defaultThemeColor = Colors.blue;
 final defaultBrightness = Brightness.light;
 
 //prefs for flashcards page
-int amountOfCards;
-bool cardsOrdered;
+int amountOfCards = defaultCardAmount;
+bool cardsOrdered = defaultCardsOrdered;
 
 //GLOBAL VARS
 List<String> flashcardFiles = ['$exampleFileName'];

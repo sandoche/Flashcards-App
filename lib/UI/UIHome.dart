@@ -619,7 +619,10 @@ class MyHomePageState extends State<MyHomePage> {
                     child: Padding(
                       padding: EdgeInsets.all(globals.defaultPadding),
                       child: TextField(
-                        decoration: InputDecoration(contentPadding: EdgeInsets.all(globals.defaultPadding)),
+                        decoration: InputDecoration(
+                            contentPadding: EdgeInsets.all(globals.defaultPadding),
+                            border: OutlineInputBorder(),
+                        ),
                         enabled: _cardsAmountEnabled,
                         keyboardType: TextInputType.number,
                         inputFormatters: <TextInputFormatter>[WhitelistingTextInputFormatter.digitsOnly],
